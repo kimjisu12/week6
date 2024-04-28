@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>연습문제 24</title>
+</head>
+<body>
+    <h3>설문조사</h3>
+    <fieldset>
+        <legend>성별과 니이를 입력하세요</legend>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">남성</label>
+        <input type="radio" name="gender" value="femael" id="female">
+        <label for="female">여성</label><br>
+        <label for="user_age">나이:</label>
+        <input type="number" min="1" max="90" step="1" value="20" name="age" id="user_age">
+        </fieldset> <br>
+
+        <fieldset>
+            <legend>관심 분야를 선택하세요(1개 이상)</legend>
+            <input type="checkbox" name="hobby" value="dc"/>디지털 콘텐츠
+            <input type="checkbox" name="hobby" value="wp" checked/>웹프로그래밍
+            <input type="checkbox" name="hobby" value="db"/>데이터베이스
+            <input type="checkbox" name="hobby" value="ebook"/>전자출판
+        </fieldset><br>
+
+        <fieldset>
+            <legend>다음 문항에 대해 5점 척도로 답하세요</legend>
+            본 세미나의 주제는 만족스러운가?1<input type="range" min="1" max="5" value="3">5<br>
+            본 세미나의 초청 강사는 만족스러운가?1<input type="range" min="1" max="5" value="3">5<br>
+            본 세미나의 강의 시간은 만족스러운가?1<input type="range" min="1" max="5" value="3">5<br>
+        </fieldset><br>
+
+        <P>기타 의견 사항 <br>
+            <textarea name="comments" cols="40" rows="5">의견을 적으시오</textarea>
+        </P>
+        <input type="submit" value="확인"/>
+        <input type="reset" value="취소"/>
+
+
+</body>
+</html>
